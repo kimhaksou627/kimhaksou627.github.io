@@ -2,8 +2,6 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-
-
 # Load the data
 df = pd.read_csv('cleaned_data.csv')
 
@@ -15,8 +13,6 @@ least_popular_song = df.loc[df['popularity'].idxmin()]
 avg_popularity = df['popularity'].mean()
 closest_to_avg = (df['popularity'] - avg_popularity).abs().idxmin()
 avg_song = df.loc[closest_to_avg]
-
-
 
 # Define custom colors
 background_color = '#212121'
