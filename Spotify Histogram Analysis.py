@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 # Load the data
-df = pd.read_csv('cleaned_data (2).csv')
+df = pd.read_csv('cleaned_data.csv')
 
 # Define the attributes list
 attributes = ['acousticness', 'danceability', 'energy', 'loudness', 'speechiness', 'instrumentalness', 'liveness', 'valence', 'tempo']
